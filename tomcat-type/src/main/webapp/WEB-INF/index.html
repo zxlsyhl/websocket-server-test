@@ -24,6 +24,11 @@
     } else {
         alert('当前浏览器 Not support websocket')
     }
+    websocket.readyState = function(){
+        /*
+        代表当前连接的状态，短整型数据，取值为CONNECTING(值为0)， OPEN(值为1), CLOSING(值为2), CLOSED(值为3)
+         */
+    }
 
     //连接发生错误的回调方法
     websocket.onerror = function () {
